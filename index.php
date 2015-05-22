@@ -1,4 +1,5 @@
-<?php 
+<?php
+require_once './config/config.php';
 define('MAIN_PATH', dirname(__FILE__)."/");
 $nowpage=isset($_REQUEST['nowpage'])?$_REQUEST['nowpage']:"";
 $section=isset($_REQUEST['section'])?$_REQUEST['section']:"";
