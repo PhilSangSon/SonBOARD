@@ -1,3 +1,27 @@
+<?php 
+define('MAIN_PATH', dirname(__FILE__)."/");
+$nowpage=isset($_REQUEST['nowpage'])?$_REQUEST['nowpage']:"";
+$section=isset($_REQUEST['section'])?$_REQUEST['section']:"";
+
+if($nowpage){
+
+	if(!$section){
+		$section="include";
+	}
+
+	$path=$section."/".$nowpage.".php";
+
+	if(file_exists($path)){
+		include($path);
+	}else{
+		echo "해당 페이지가 없습니다";
+	}
+
+}else{
+	include(MAIN_PATH."include/main.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
