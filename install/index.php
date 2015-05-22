@@ -14,7 +14,7 @@ if (file_exists("./config/dbcon.php")) {
 <?
 	exit;
 }
-// 2. 게시판의 최상단 디렉토리가 쓰기가능인지 검사
+// 게시판의 최상단 디렉토리가 쓰기가능인지 검사
 if (!is_writeable("..")) {
 ?>
     <html>
