@@ -195,7 +195,8 @@ function loginCheck(){
 		$('#m_pass').css("border","1px solid green");
 	}
 	
-	form.action="./loginProc"+ext;
+	//form.action="?section=core/model&nowpage=memberController";
+	form.action="./admin_index.php";
 	form.submit();
 }
 /**
@@ -473,5 +474,18 @@ function pushSendCheck(pushIdx){
 	}
 	form.encoding="multipart/form-data";
 	form.action="./pushSend"+ext;
+	form.submit();
+}
+/**
+ * POST 페이지이동
+ * @param action
+ * @param section
+ * @param nowpage
+ */
+function pageGo(action, section, nowpage){
+	var form = document.PageForm;
+	$("#section").val(section);
+	$("#nowpage").val(nowpage);
+	form.action=action+ext;
 	form.submit();
 }

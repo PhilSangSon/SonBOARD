@@ -4,7 +4,7 @@
  * @author 손필상
  * @since 2015-05-22
  */
-if (file_exists("./config/dbcon.php")) {
+if (file_exists("../config/dbcon.php")) {
 ?>
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
      <script>
@@ -15,7 +15,7 @@ if (file_exists("./config/dbcon.php")) {
 	exit;
 }
 // 게시판의 최상단 디렉토리가 쓰기가능인지 검사
-if (!is_writeable("..")) {
+if (!is_writeable("../..")) {
 ?>
     <html>
     <head>
