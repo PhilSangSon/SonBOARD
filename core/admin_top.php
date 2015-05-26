@@ -160,7 +160,7 @@ if($user_id != ""){
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a onclick="location.href='?section=core/model&nowpage=memberController&mode=logout';"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="javascript:;" onclick="pageGo('admin_index', 'core/model', 'memberController', 'logout');"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
                     </ul>
                 </li>

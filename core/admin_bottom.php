@@ -6,6 +6,7 @@
 	<form name='PageForm' id='PageForm' method='post' onsubmit='return false;'>
     	<input type='hidden' name='section' id='section'/>
     	<input type='hidden' name='nowpage' id='nowpage'/>
+    	<input type='hidden' name='mode' id='mode'/>
     </form>
     
     <!-- jQuery -->

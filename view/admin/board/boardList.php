@@ -43,6 +43,52 @@ $data = sql_list($query);
         	</div>
     	</div>
         <!-- /.row -->
+        
+        <div class="row">
+       		<div class="col-lg-12">
+         		<h2>게시판 리스트</h2>
+              	<div class="table-responsive">
+               		<table class="table table-bordered table-hover">
+                		<thead>
+                        	<tr>
+                       			<th>번호</th>
+                         		<th>코드</th>
+                         		<th>이름</th>
+                           		<th>관리자</th>
+                    		</tr>
+               			</thead>
+                  		<tbody>
+                  	<?
+                  		if($total_count > 0){
+                  			for($i=0;$i<count($data);$i++){
+                  	?>
+                    		<tr>
+                           		<td><?=($total_count - (($page -1) * $page_row) - $i)?></td>
+                           		<td><a href="javascript:;" onclick="pageGo(action, section, nowpage);"><?=$data[$i]['bc_code']?></a></td>
+                        		<td><a href="javascript:;" onclick="pageGo(action, section, nowpage);"><?=$data[$i]['bc_name']?></a></td>
+                          		<td><?=$data[$i]['bc_admin']?></td>
+                         	</tr>
+                   	<?
+                  			}
+                  		}else{
+                  	?>
+                  			<tr><td colspan="4" style="text-align:center">게시판이 하나도 없습니다.</td></tr>
+                  	<?
+                  		}
+                   	?>
+                   			<tr><td colspan="4" style="text-align:center"><?=$paging_str?></td></tr>
+                   			<tr>
+                   				<td colspan="4" style="text-align:center">
+                   					<button type="button" class="btn btn-primary btn-block" onclick="pageGo('admin_index', 'view/admin/board', 'boardInsert', '');">게시판생성</button>
+                   				</td>
+                   			</tr>
+                    	</tbody>
+               		</table>
+              	</div>
+			</div>
+		</div>
+		<!-- /.row -->
+		
 	</div>
 	
 </div>

@@ -224,7 +224,7 @@ function board_insertCheck(){
 		$('#bc_name').css("border","1px solid green");
 	}
 	
-	form.action="./board_insertProc"+ext;
+	form.action="./admin_index.php";
 	form.submit();
 }
 /**
@@ -481,11 +481,13 @@ function pushSendCheck(pushIdx){
  * @param action
  * @param section
  * @param nowpage
+ * @param mode
  */
-function pageGo(action, section, nowpage){
+function pageGo(action, section, nowpage, mode){
 	var form = document.PageForm;
 	$("#section").val(section);
 	$("#nowpage").val(nowpage);
+	$("#mode").val(mode);
 	form.action=action+ext;
 	form.submit();
 }
