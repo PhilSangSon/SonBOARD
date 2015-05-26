@@ -108,7 +108,7 @@ if (!is_writeable("..")) {
 		  				</ul>
 					</div>
 					
-					<button type="button" class="btn btn-primary btn-lg btn-block">설치하기</button>
+					<button type="button" onclick="installCheck();" class="btn btn-primary btn-lg btn-block">설치하기</button>
 					
 				</form>
 			</div>
@@ -124,6 +124,7 @@ if (!is_writeable("..")) {
     <script src="../skin/bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../skin/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
-    
+    <!-- Custom js -->
+    <script src="../skin/bootstrap/js/myproject.js"></script>
   </body>
 </html>

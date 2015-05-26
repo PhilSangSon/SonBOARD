@@ -99,6 +99,78 @@ function getLogin(){
 	}
 }
 /**
+ * 설치체크
+ * @returns {Boolean}
+ */
+function installCheck(){
+	var form = document.MyForm;
+	if($.trim($("#host").val()).length <= 0){
+		alert("호스트명을 입력해주세요.");	
+		$("#host").val("");
+		$('#host').css("border","1px solid red");
+		$("#host").focus();
+		return false;
+	}else{
+		$('#host').css("border","1px solid green");
+	}
+	if($.trim($("#user").val()).length <= 0){
+		alert("DB 사용자 ID를 입력해주세요.");	
+		$("#user").val("");
+		$('#user').css("border","1px solid red");
+		$("#user").focus();
+		return false;
+	}else{
+		$('#user').css("border","1px solid green");
+	}
+	if($.trim($("#pass").val()).length <= 0){
+		alert("DB 비밀번호를 입력해주세요.");	
+		$("#pass").val("");
+		$('#pass').css("border","1px solid red");
+		$("#pass").focus();
+		return false;
+	}else{
+		$('#pass').css("border","1px solid green");
+	}
+	if($.trim($("#db_name").val()).length <= 0){
+		alert("데이터베이스명을 입력해주세요.");	
+		$("#db_name").val("");
+		$('#db_name').css("border","1px solid red");
+		$("#db_name").focus();
+		return false;
+	}else{
+		$('#db_name').css("border","1px solid green");
+	}
+	if($.trim($("#admin_id").val()).length <= 0){
+		alert("관리자 아이디를 입력해주세요.");	
+		$("#admin_id").val("");
+		$('#admin_id').css("border","1px solid red");
+		$("#admin_id").focus();
+		return false;
+	}else{
+		$('#admin_id').css("border","1px solid green");
+	}
+	if($.trim($("#admin_name").val()).length <= 0){
+		alert("관리자 이름을 입력해주세요.");	
+		$("#admin_name").val("");
+		$('#admin_name').css("border","1px solid red");
+		$("#admin_name").focus();
+		return false;
+	}else{
+		$('#admin_name').css("border","1px solid green");
+	}
+	if($.trim($("#admin_pass").val()).length <= 0){
+		alert("관리자 비밀번호를 입력해주세요.");	
+		$("#admin_pass").val("");
+		$('#admin_pass').css("border","1px solid red");
+		$("#admin_pass").focus();
+		return false;
+	}else{
+		$('#admin_pass').css("border","1px solid green");
+	}
+	form.action="./install"+ext;
+	form.submit();
+}
+/**
  * 로그인 체크
  * @returns {Boolean}
  */
