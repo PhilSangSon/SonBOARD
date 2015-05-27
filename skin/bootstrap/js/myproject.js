@@ -485,9 +485,9 @@ function pushSendCheck(pushIdx){
  */
 function pageGo(action, section, nowpage, mode){
 	var form = document.PageForm;
-	$("#section").val(section);
-	$("#nowpage").val(nowpage);
-	$("#mode").val(mode);
+	form.section.value=section;
+	form.nowpage.value=nowpage;
+	form.mode.value=mode;
 	form.action=action+ext;
 	form.submit();
 }

@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `bd__member` (
   `m_level` tinyint(2) DEFAULT '1' COMMENT '레벨',
   `m_stat` char(1) DEFAULT 'Y' COMMENT '상태',
   `m_regdate` datetime DEFAULT NULL COMMENT '등록일',
-  PRIMARY KEY (`m_id`,`m_name`),
+  PRIMARY KEY (`m_id`),
   UNIQUE KEY `UIX_bd__member` (`m_idx`,`m_level`,`m_stat`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='회원';
 		";
@@ -134,10 +134,10 @@ CREATE TABLE IF NOT EXISTS `bd__board` (
   `b_regdate` datetime NOT NULL COMMENT '글등록일시',
   PRIMARY KEY (`b_idx`,`bc_code`),
   UNIQUE KEY `UIX_bd__board` (`b_num`,`b_reply`),
-  KEY `FK_bd__member_TO_bd__board` (`m_id`,`m_name`),
+  KEY `FK_bd__member_TO_bd__board` (`m_id`),
   KEY `FK_bd__board_config_TO_bd__board` (`bc_code`),
   CONSTRAINT `FK_bd__board_config_TO_bd__board` FOREIGN KEY (`bc_code`) REFERENCES `bd__board_config` (`bc_code`),
-  CONSTRAINT `FK_bd__member_TO_bd__board` FOREIGN KEY (`m_id`, `m_name`) REFERENCES `bd__member` (`m_id`, `m_name`)
+  CONSTRAINT `FK_bd__member_TO_bd__board` FOREIGN KEY (`m_id`) REFERENCES `bd__member` (`m_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='게시판글';
   		";
 $result3 = mysqli_query($connect, $sql);
@@ -158,10 +158,10 @@ CREATE TABLE IF NOT EXISTS `bd__comment` (
   `co_contents` text NOT NULL COMMENT '댓글 내용',
   `co_regdate` datetime NOT NULL COMMENT '작성일시',
   PRIMARY KEY (`co_idx`,`b_idx`,`bc_code`),
-  KEY `FK_bd__member_TO_bd__comment` (`m_id`,`m_name`),
+  KEY `FK_bd__member_TO_bd__comment` (`m_id`),
   KEY `FK_bd__board_TO_bd__comment` (`b_idx`,`bc_code`),
   CONSTRAINT `FK_bd__board_TO_bd__comment` FOREIGN KEY (`b_idx`, `bc_code`) REFERENCES `bd__board` (`b_idx`, `bc_code`),
-  CONSTRAINT `FK_bd__member_TO_bd__comment` FOREIGN KEY (`m_id`, `m_name`) REFERENCES `bd__member` (`m_id`, `m_name`)
+  CONSTRAINT `FK_bd__member_TO_bd__comment` FOREIGN KEY (`m_id`) REFERENCES `bd__member` (`m_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='댓글';
   		";
 $result4 = mysqli_query($connect, $sql);
@@ -183,9 +183,9 @@ CREATE TABLE IF NOT EXISTS `bd__view_history` (
   PRIMARY KEY (`vh_idx`,`b_idx`,`bc_code`),
   UNIQUE KEY `UIX_bd__view_history` (`b_idx`),
   KEY `FK_bd__board_TO_bd__view_history` (`b_idx`,`bc_code`),
-  KEY `FK_bd__member_TO_bd__view_history` (`m_id`,`m_name`),
+  KEY `FK_bd__member_TO_bd__view_history` (`m_id`),
   CONSTRAINT `FK_bd__board_TO_bd__view_history` FOREIGN KEY (`b_idx`, `bc_code`) REFERENCES `bd__board` (`b_idx`, `bc_code`),
-  CONSTRAINT `FK_bd__member_TO_bd__view_history` FOREIGN KEY (`m_id`, `m_name`) REFERENCES `bd__member` (`m_id`, `m_name`)
+  CONSTRAINT `FK_bd__member_TO_bd__view_history` FOREIGN KEY (`m_id`) REFERENCES `bd__member` (`m_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='조회수용 글읽기 히스토리';
   		";
 $result5 = mysqli_query($connect, $sql);
