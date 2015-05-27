@@ -25,11 +25,7 @@ function sql_connect($db_host, $db_user, $db_pass, $db_name) {
  */
 function sql_query($sql) {
 	global $connect;
-	$sql1="SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED";
-	mysqli_query($connect, $sql1) or die("<p>$sql1<p>".mysqli_errno($connect)." : ".mysqli_error($connect)."<p>error file : $_SERVER[PHP_SELF]");
 	$result = mysqli_query($connect, $sql) or die("<p>$sql<p>".mysqli_errno($connect)." : ".mysqli_error($connect)."<p>error file : $_SERVER[PHP_SELF]");
-	$sql2="COMMIT";
-	mysqli_query($connect, $sql2) or die("<p>$sql2<p>".mysqli_errno($connect)." : ".mysqli_error($connect)."<p>error file : $_SERVER[PHP_SELF]");
 	return $result;
 }
 

@@ -9,8 +9,12 @@ $page_scale = 10;
 $paging_str = "";
 
 // 전체 게시판 갯수 알아내기
+$sql1="SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED";
+sql_query($sql1);
 $sql = "select count(*) as cnt from bd__board_config where 1";
 $total_count = sql_total($sql);
+$sql2="COMMIT";
+sql_query($sql2);
 // 페이지 출력 내용 만들기
 $paging_str = paging($page, $page_row, $page_scale, $total_count, "view/admin/board", "boardList");
 
@@ -21,7 +25,8 @@ $sql1="SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED";
 sql_query($sql1);
 $query = "select * from bd__board_config where 1 order by bc_idx desc limit ".$from_record.", ".$page_row;
 $data = sql_list($query);
-
+$sql2="COMMIT";
+sql_query($sql2);
 ?>
 <div id="page-wrapper">
 

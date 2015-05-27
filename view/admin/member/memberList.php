@@ -9,17 +9,24 @@ $page_scale = 10;
 $paging_str = "";
 
 // 전체 게시판 갯수 알아내기
+$sql1="SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED";
+sql_query($sql1);
 $sql = "select count(*) as cnt from bd__member where 1";
 $total_count = sql_total($sql);
+$sql2="COMMIT";
+sql_query($sql2);
 // 페이지 출력 내용 만들기
 $paging_str = paging($page, $page_row, $page_scale, $total_count, "view/admin/member", "memberList");
 
 // 시작 열을 구함
 $from_record = ($page - 1) * $page_row;
 // 글목록 구하기
+$sql1="SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED";
+sql_query($sql1);
 $query = "select * from bd__member where 1 order by m_idx desc limit ".$from_record.", ".$page_row;
 $data = sql_list($query);
-
+$sql2="COMMIT";
+sql_query($sql2);
 ?>
 <div id="page-wrapper">
 

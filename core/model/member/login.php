@@ -6,9 +6,13 @@ if(trim($m_pass) == ""){
 	alert("비밀번호를 입력해주세요.");
 }
 // 같은 아이디 검사
+$sql1="SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED";
+sql_query($sql1);
 $chk_sql = "select AES_DECRYPT(UNHEX(m_pass), 'thsvlftkdWkd') As m_pass, m_idx, m_id, m_name, m_level from bd__member where m_id = '".trim($m_id)."'";
 $chk_result = sql_query($chk_sql);
 $chk_data = mysqli_fetch_array($chk_result);
+$sql2="COMMIT";
+sql_query($sql2);
 // 아이디 존재함.
 if($chk_data['m_idx']){
 
