@@ -12,11 +12,13 @@ $paging_str = "";
 $sql = "select count(*) as cnt from bd__board_config where 1";
 $total_count = sql_total($sql);
 // 페이지 출력 내용 만들기
-$paging_str = paging($page, $page_row, $page_scale, $total_count, "section=view/admin/board&nowpage=boardList");
+$paging_str = paging($page, $page_row, $page_scale, $total_count, "view/admin/board", "boardList");
 
 // 시작 열을 구함
 $from_record = ($page - 1) * $page_row;
 // 글목록 구하기
+$sql1="SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED";
+sql_query($sql1);
 $query = "select * from bd__board_config where 1 order by bc_idx desc limit ".$from_record.", ".$page_row;
 $data = sql_list($query);
 

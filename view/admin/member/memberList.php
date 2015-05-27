@@ -12,7 +12,7 @@ $paging_str = "";
 $sql = "select count(*) as cnt from bd__member where 1";
 $total_count = sql_total($sql);
 // 페이지 출력 내용 만들기
-$paging_str = paging($page, $page_row, $page_scale, $total_count, "section=view/admin/member&nowpage=memberList");
+$paging_str = paging($page, $page_row, $page_scale, $total_count, "view/admin/member", "memberList");
 
 // 시작 열을 구함
 $from_record = ($page - 1) * $page_row;
