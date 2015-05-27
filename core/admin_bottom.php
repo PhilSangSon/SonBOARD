@@ -7,6 +7,8 @@
     	<input type='hidden' name='section' id='section'/>
     	<input type='hidden' name='nowpage' id='nowpage'/>
     	<input type='hidden' name='mode' id='mode'/>
+    	<input type='hidden' name='idx' id='idx'/>
+    	<input type='hidden' name='page' id='page'/>
     </form>
     
     <!-- jQuery -->

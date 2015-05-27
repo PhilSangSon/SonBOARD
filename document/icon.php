@@ -300,52 +300,250 @@
 				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-arrows-h"></i></td>
 			</tr>
 			<tr>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-glass</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-glass"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-bar-chart-o</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-bar-chart-o"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-bar-chart</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-bar-chart"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-twitter-square</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-twitter-square"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-facebook-square</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-facebook-square"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-camera-retro</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-camera-retro"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-key</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-key"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-gears</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-gears"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-cogs</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-cogs"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-comments</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-comments"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-thumbs-o-up</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-thumbs-o-up"></i></td>
 			</tr>
 			<tr>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-glass</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-glass"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-thumbs-o-down</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-thumbs-o-down"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-star-half</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-star-half"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-heart-o</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-heart-o"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-sign-out</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-sign-out"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-linkedin-square</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-linkedin-square"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-thumb-tack</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-thumb-tack"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-external-link</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-external-link"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-sign-in</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-sign-in"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-trophy</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-trophy"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-github-square</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-github-square"></i></td>
 			</tr>
 			<tr>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-glass</td>
-				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-glass"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-upload</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-upload"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-lemon-o</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-lemon-o"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-phone</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-phone"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-square-o</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-square-o"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-bookmark-o</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-bookmark-o"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-phone-square</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-phone-square"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-twitter</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-twitter"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-facebook</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-facebook"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-github</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-github"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-unlock</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-unlock"></i></td>
+			</tr>
+			<tr>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-credit-card</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-credit-card"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-rss</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-rss"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-hdd-o</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-hdd-o"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-bullhorn</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-bullhorn"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-bell</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-bell"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-certificate</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-certificate"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-hand-o-right</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-hand-o-right"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-hand-o-left</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-hand-o-left"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-hand-o-up</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-hand-o-up"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-hand-o-down</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-hand-o-down"></i></td>
+			</tr>
+			<tr>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-arrow-circle-left</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-arrow-circle-left"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-arrow-circle-right</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-arrow-circle-right"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-arrow-circle-up</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-arrow-circle-up"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-arrow-circle-down</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-arrow-circle-down"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-globe</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-globe"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-wrench</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-wrench"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-tasks</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-tasks"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-filter</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-filter"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-briefcase</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-briefcase"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-arrows-alt</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-arrows-alt"></i></td>
+			</tr>
+			<tr>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-group</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-group"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-users</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-users"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-chain</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-chain"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-link</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-link"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-cloud</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-cloud"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-flask</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-flask"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-cut</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-cut"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-scissors</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-scissors"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-copy</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-copy"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-files-o</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-files-o"></i></td>
+			</tr>
+			<tr>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-paperclip</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-paperclip"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-save</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-save"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-floppy-o</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-floppy-o"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-square</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-square"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-navicon</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-navicon"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-reorder</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-reorder"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-bars</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-bars"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-list-ul</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-list-ul"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-list-ol</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-list-ol"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-strikethrough</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-strikethrough"></i></td>
+			</tr>
+			<tr>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-underline</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-underline"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-table</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-table"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-magic</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-magic"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-truck</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-truck"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-pinterest</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-pinterest"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-pinterest-square</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-pinterest-square"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-google-plus-square</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-google-plus-square"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-google-plus</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-google-plus"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-money</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-money"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-caret-down</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-caret-down"></i></td>
+			</tr>
+			<tr>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-caret-up</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-caret-up"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-caret-left</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-caret-left"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-caret-right</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-caret-right"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-columns</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-columns"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-unsorted</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-unsorted"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-sort</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-sort"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-sort-down</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-sort-down"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-sort-desc</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-sort-desc"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-sort-up</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-sort-up"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-sort-asc</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-sort-asc"></i></td>
+			</tr>
+			<tr>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-envelope</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-envelope"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-linkedin</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-linkedin"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-rotate-left</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-rotate-left"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-undo</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-undo"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-legal</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-legal"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-gavel</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-gavel"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-dashboard</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-dashboard"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-tachometer</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-tachometer"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-comment-o</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-comment-o"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-comments-o</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-comments-o"></i></td>
+			</tr>
+			<tr>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-flash</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-flash"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-bolt</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-bolt"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-sitemap</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-sitemap"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-umbrella</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-umbrella"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-paste</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-paste"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-clipboard</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-clipboard"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-lightbulb-o</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-lightbulb-o"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-exchange</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-exchange"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-cloud-download</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-cloud-download"></i></td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-cloud-upload</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-cloud-upload"></i></td>
+			</tr>
+			<tr>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-user-md</td>
+				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-user-md"></i></td>
 				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>
 				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff"><i class="fa fa-"></i></td>
 				<td style="padding: 10px; margin: 0px; font-style: normal;color: #ffffff">.fa-</td>

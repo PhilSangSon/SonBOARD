@@ -252,7 +252,7 @@ function board_modifyCheck(){
 		$('#bc_name').css("border","1px solid green");
 	}
 	
-	form.action="./board_modifyProc"+ext;
+	form.action="./admin_index.php";
 	form.submit();
 }
 /**
@@ -260,8 +260,11 @@ function board_modifyCheck(){
  * @returns {Boolean}
  */
 function board_delete(bc_idx){
-	if(confirm('정말 삭제하시겠습니까?')){
-		location.href='./board_deleteProc'+ext+'?bc_idx='+bc_idx;
+	if(confirm('게시글이 전부 삭제됩니다!\n정말 삭제하시겠습니까?')){
+		var form = document.MyForm;
+		$('#mode').val('boardDelete');
+		form.action="./admin_index.php";
+		form.submit();
 	}else{
 		return false;
 	}
@@ -290,7 +293,7 @@ function member_modifyCheck(){
 	}else{
 		$('#m_pass').css("border","1px solid green");
 	}
-	form.action="./member_modifyProc"+ext;
+	form.action="./admin_index.php";
 	form.submit();
 }
 /**
@@ -298,8 +301,11 @@ function member_modifyCheck(){
  * @returns {Boolean}
  */
 function member_delete(m_idx){
-	if(confirm('정말 삭제하시겠습니까?')){
-		location.href='./member_deleteProc'+ext+'?m_idx='+m_idx;
+	if(confirm('회원정보가 완전히 삭제됩니다!\n정말 삭제하시겠습니까?')){
+		var form = document.MyForm;
+		$('#mode').val('memberDelete');
+		form.action="./admin_index.php";
+		form.submit();
 	}else{
 		return false;
 	}
@@ -309,7 +315,7 @@ function member_delete(m_idx){
  * @param value
  */
 function AjaxIdCheck(value){
-	$(document).ready(function(){
+	//$(document).ready(function(){
 		$.ajax({
 			type: "POST",
 			url: "./AjaxIdCheck.php",
@@ -331,7 +337,7 @@ function AjaxIdCheck(value){
 				alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
 			}
 		});
-	});
+	//});
 }
 /**
  * 회원등록 체크
@@ -342,6 +348,14 @@ function member_insertCheck(){
 	if($.trim($("#m_id").val()).length <= 0){
 		alert("회원아이디를 입력해 주세요.");	
 		$("#m_id").val("");
+		$('#m_id').css("border","1px solid red");
+		$("#m_id").focus();
+		return false;
+	}else{
+		$('#m_id').css("border","1px solid green");
+	}
+	if($.trim($("#m_id").val()).length <= 4 || $.trim($("#m_id").val()).length >= 20){
+		alert("5 ~ 20자로 입력해 주세요.");	
 		$('#m_id').css("border","1px solid red");
 		$("#m_id").focus();
 		return false;
@@ -390,7 +404,7 @@ function member_insertCheck(){
 		$('#m_pass').css("border","1px solid green");
 		$('#m_passRe').css("border","1px solid green");
 	}
-	form.action="./member_insertProc"+ext;
+	form.action="./admin_index.php";
 	form.submit();
 }
 /**
@@ -482,12 +496,15 @@ function pushSendCheck(pushIdx){
  * @param section
  * @param nowpage
  * @param mode
+ * @param idx
  */
-function pageGo(action, section, nowpage, mode){
+function pageGo(action, section, nowpage, mode, idx, page){
 	var form = document.PageForm;
 	form.section.value=section;
 	form.nowpage.value=nowpage;
 	form.mode.value=mode;
+	form.idx.value=idx;
+	form.page.value=page;
 	form.action=action+ext;
 	form.submit();
 }

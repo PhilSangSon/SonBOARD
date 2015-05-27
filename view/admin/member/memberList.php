@@ -9,15 +9,15 @@ $page_scale = 10;
 $paging_str = "";
 
 // 전체 게시판 갯수 알아내기
-$sql = "select count(*) as cnt from bd__board_config where 1";
+$sql = "select count(*) as cnt from bd__member where 1";
 $total_count = sql_total($sql);
 // 페이지 출력 내용 만들기
-$paging_str = paging($page, $page_row, $page_scale, $total_count, "section=view/admin/board&nowpage=boardList");
+$paging_str = paging($page, $page_row, $page_scale, $total_count, "section=view/admin/member&nowpage=memberList");
 
 // 시작 열을 구함
 $from_record = ($page - 1) * $page_row;
 // 글목록 구하기
-$query = "select * from bd__board_config where 1 order by bc_idx desc limit ".$from_record.", ".$page_row;
+$query = "select * from bd__member where 1 order by m_idx desc limit ".$from_record.", ".$page_row;
 $data = sql_list($query);
 
 ?>
@@ -29,14 +29,14 @@ $data = sql_list($query);
         <div class="row">
         	<div class="col-lg-12">
             	<h1 class="page-header">
-                	게시판 관리
+                	회원 관리
                 </h1>
                 <ol class="breadcrumb">
                    	<li>
                     	<i class="fa fa-dashboard"></i>  <a href="admin_index.php">홈</a>
                     </li>
                		<li class="active">
-                    	<i class="fa fa-table"></i> 게시판 목록
+                    	<i class="fa fa-users"></i> 회원 목록
                 	</li>
             	</ol>
         	</div>
@@ -45,15 +45,15 @@ $data = sql_list($query);
         
         <div class="row">
        		<div class="col-lg-12">
-         		<h2>게시판 리스트</h2>
+         		<h2>회원 리스트</h2>
               	<div class="table-responsive">
                		<table class="table table-bordered table-hover">
                 		<thead>
                         	<tr>
                        			<th>번호</th>
-                         		<th>코드</th>
+                         		<th>아이디</th>
                          		<th>이름</th>
-                           		<th>관리자</th>
+                           		<th>레벨</th>
                     		</tr>
                			</thead>
                   		<tbody>
@@ -63,22 +63,22 @@ $data = sql_list($query);
                   	?>
                     		<tr>
                            		<td><?=($total_count - (($page -1) * $page_row) - $i)?></td>
-                           		<td><a href="javascript:;" onclick="pageGo('admin_index', 'view/admin/board', 'boardModify', '', '<?=$data[$i]['bc_idx']?>', '<?=$page?>');"><?=$data[$i]['bc_code']?></a></td>
-                        		<td><a href="javascript:;" onclick="pageGo('admin_index', 'view/admin/board', 'boardModify', '', '<?=$data[$i]['bc_idx']?>', '<?=$page?>');"><?=$data[$i]['bc_name']?></a></td>
-                          		<td><?=$data[$i]['bc_admin']?></td>
+                           		<td><a href="javascript:;" onclick="pageGo('admin_index', 'view/admin/member', 'memberModify', '', '<?=$data[$i]['m_idx']?>', '<?=$page?>');"><?=$data[$i]['m_id']?></a></td>
+                        		<td><a href="javascript:;" onclick="pageGo('admin_index', 'view/admin/member', 'memberModify', '', '<?=$data[$i]['m_idx']?>', '<?=$page?>');"><?=$data[$i]['m_name']?></a></td>
+                          		<td><?=memberLevelView($data[$i]['m_level'])?></td>
                          	</tr>
                    	<?
                   			}
                   		}else{
                   	?>
-                  			<tr><td colspan="4" style="text-align:center">게시판이 하나도 없습니다.</td></tr>
+                  			<tr><td colspan="4" style="text-align:center">회원이 한명도 없습니다.</td></tr>
                   	<?
                   		}
                    	?>
                    			<tr><td colspan="4" style="text-align:center"><?=$paging_str?></td></tr>
                    			<tr>
                    				<td colspan="4" style="text-align:center">
-                   					<button type="button" class="btn btn-primary btn-block" onclick="pageGo('admin_index', 'view/admin/board', 'boardInsert', '', '', '');">게시판생성</button>
+                   					<button type="button" class="btn btn-primary btn-block" onclick="pageGo('admin_index', 'view/admin/member', 'memberInsert', '', '', '');">회원등록</button>
                    				</td>
                    			</tr>
                     	</tbody>

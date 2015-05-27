@@ -10,6 +10,11 @@
 function sql_connect($db_host, $db_user, $db_pass, $db_name) {
 	$result = mysqli_connect($db_host, $db_user, $db_pass) or die(mysqli_error());
 	mysqli_select_db($result, $db_name) or die(mysqli_error($result));
+	
+	mysqli_query($result, "set session character_set_connection=utf8;");
+	mysqli_query($result, "set session character_set_results=utf8;");
+	mysqli_query($result, "set session character_set_client=utf8;");
+	
 	return $result;
 }
 
@@ -98,8 +103,9 @@ function alert($msg = '', $url = '') {
  * @param string $msg
  * @param string $section
  * @param string $nowpage
+ * @param string $page
  */
-function PageAlert($msg = '', $section = '', $nowpage = ''){
+function PageAlert($msg = '', $section = '', $nowpage = '', $page = '1'){
 	if ($msg != ''){
 		//$msg = '올바른 방법으로 이용해 주십시오.';
 	echo "<script type='text/javascript'>alert('$msg');";
@@ -110,6 +116,7 @@ function PageAlert($msg = '', $section = '', $nowpage = ''){
 			<form name='PageForm' id='PageForm' method='post' onsubmit='return false;'>
 		    	<input type='hidden' name='section' id='section' value='$section'/>
 		    	<input type='hidden' name='nowpage' id='nowpage' value='$nowpage'/>
+		    	<input type='hidden' name='page' id='page' value='$page'/>
 		    </form>
 		    <script type='text/javascript'>
 		    document.PageForm.submit();
@@ -175,7 +182,7 @@ function paging($page, $page_row, $page_scale, $total_count, $ext = '') {
 
 	// 3. 처음 페이지 링크 만들기
 	if ($page > 1) {
-		$paging_str .= "<a href='".$_SERVER[PHP_SELF]."?page=1&".$ext."'>처음</a>";
+		$paging_str .= "<a href='".$_SERVER['PHP_SELF']."?page=1&".$ext."'>처음</a>";
 	}
 
 	// 4. 페이징에 표시될 시작 페이지 구하기
@@ -188,7 +195,7 @@ function paging($page, $page_row, $page_scale, $total_count, $ext = '') {
 
 	// 6. 이전 페이징 영역으로 가는 링크 만들기
 	if ($start_page > 1) {
-		$paging_str .= " &nbsp;<a href='".$_SERVER[PHP_SELF]."?page=".($start_page - 1)."&".$ext."'>이전</a>";
+		$paging_str .= " &nbsp;<a href='".$_SERVER['PHP_SELF']."?page=".($start_page - 1)."&".$ext."'>이전</a>";
 	}
 
 	// 7. 페이지들 출력 부분 링크 만들기
@@ -196,7 +203,7 @@ function paging($page, $page_row, $page_scale, $total_count, $ext = '') {
 		for ($i = $start_page; $i <= $end_page; $i++) {
 			// 현재 페이지가 아니면 링크 걸기
 			if ($page != $i) {
-				$paging_str .= " &nbsp;<a href='".$_SERVER[PHP_SELF]."?page=".$i."&".$ext."'><span>$i</span></a>";
+				$paging_str .= " &nbsp;<a href='".$_SERVER['PHP_SELF']."?page=".$i."&".$ext."'><span>$i</span></a>";
 				// 현재페이지면 굵게 표시하기
 			} else {
 				$paging_str .= " &nbsp;<b>$i</b> ";
@@ -206,12 +213,12 @@ function paging($page, $page_row, $page_scale, $total_count, $ext = '') {
 
 	// 8. 다음 페이징 영역으로 가는 링크 만들기
 	if ($total_page > $end_page) {
-		$paging_str .= " &nbsp;<a href='".$_SERVER[PHP_SELF]."?page=".($end_page + 1)."&".$ext."'>다음</a>";
+		$paging_str .= " &nbsp;<a href='".$_SERVER['PHP_SELF']."?page=".($end_page + 1)."&".$ext."'>다음</a>";
 	}
 
 	// 9. 마지막 페이지 링크 만들기
 	if ($page < $total_page) {
-		$paging_str .= " &nbsp;<a href='".$_SERVER[PHP_SELF]."?page=".$total_page."&".$ext."'>맨끝</a>";
+		$paging_str .= " &nbsp;<a href='".$_SERVER['PHP_SELF']."?page=".$total_page."&".$ext."'>맨끝</a>";
 		//echo $ext;
 	}
 
@@ -229,6 +236,26 @@ function menuClassActive($argName, $fixName){
 		$rtnStr = "class='active'";
 	}else{
 		$rtnStr = "";
+	}
+	return $rtnStr;
+}
+/**
+ * 회원레벨별 등급표시
+ * @param number $user_level
+ * @return string
+ */
+function memberLevelView($user_level=0){
+	$rtnStr = "";
+	if($user_level == 1){
+		$rtnStr = "일반회원";
+	}else if($user_level == 2){
+		$rtnStr = "정회원";
+ 	}else if($user_level == 9){
+ 		$rtnStr = "관리자";
+	}else if($user_level == 99){
+		$rtnStr = "최고관리자";
+	}else{
+		$rtnStr = "대기회원";
 	}
 	return $rtnStr;
 }

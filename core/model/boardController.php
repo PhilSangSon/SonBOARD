@@ -1,9 +1,13 @@
 <?php
 $mode    = isset($_REQUEST['mode'])    ? $_REQUEST['mode']    :"";
+$page    = isset($_REQUEST['page'])?$_REQUEST['page']:1;
+$bc_idx  = isset($_REQUEST['bc_idx'])  ? $_REQUEST['bc_idx']  :0;
 $bc_code = isset($_REQUEST['bc_code']) ? $_REQUEST['bc_code'] :"";
 $bc_name = isset($_REQUEST['bc_name']) ? $_REQUEST['bc_name'] :"";
 $bc_head = isset($_REQUEST['bc_head']) ? $_REQUEST['bc_head'] :"";
 $bc_tail = isset($_REQUEST['bc_tail']) ? $_REQUEST['bc_tail'] :"";
+$bc_head_file_del = isset($_REQUEST['bc_head_file_del']) ? $_REQUEST['bc_head_file_del'] :"";
+$bc_tail_file_del = isset($_REQUEST['bc_tail_file_del']) ? $_REQUEST['bc_tail_file_del'] :"";
 $bc_list_level = isset($_REQUEST['bc_list_level']) ? $_REQUEST['bc_list_level'] :0;
 $bc_read_level = isset($_REQUEST['bc_read_level']) ? $_REQUEST['bc_read_level'] :0;
 $bc_write_level = isset($_REQUEST['bc_write_level']) ? $_REQUEST['bc_write_level'] :0;
@@ -17,5 +21,9 @@ $bc_use_comment = isset($_REQUEST['bc_use_comment']) ? $_REQUEST['bc_use_comment
 
 if($mode == 'boardInsert'){
 	require './core/model/board/boardInsert.php';
+}else if($mode == 'boardModify'){
+	require './core/model/board/boardModify.php';
+}else if($mode == 'boardDelete'){
+	require './core/model/board/boardDelete.php';
 }
 ?>

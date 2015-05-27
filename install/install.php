@@ -279,6 +279,16 @@ if(!$result9){
 	echo_message("운영자 정보를 적는데 실패하였습니다.");
 	exit;
 }
+// 공지사항 게시판 등록
+$sql = "
+INSERT INTO `bd__board_config` (`bc_idx`, `bc_code`, `bc_name`, `bc_head_file`, `bc_head`, `bc_tail_file`, `bc_tail`, `bc_list_level`, `bc_read_level`, `bc_write_level`, `bc_reply_level`, `bc_comment_level`, `bc_admin`, `bc_use_file`, `bc_use_secret`, `bc_use_reply`, `bc_use_comment`, `bc_regdate`, `bc_modidate`) VALUES
+	(1, 'notice', '공지사항', '', '', '', '', 0, 1, 1, 1, 1, 'admin', 1, 1, 1, 1, now(), now())
+		";
+$result10 = mysqli_query($connect, $sql);
+if(!$result10){
+	echo_message("공지사항 게시판 정보를 적는데 실패하였습니다.");
+	exit;
+}
 
 // DB설정 파일 생성
 $file = "../config/dbcon.php";
