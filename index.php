@@ -1,6 +1,6 @@
 <?php
-
-
+require_once './config/config.php';
+require_once './WebLog/sys_check.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

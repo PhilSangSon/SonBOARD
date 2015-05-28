@@ -10,8 +10,8 @@
     	<li <?=menuClassActive($nowpage, "memberList")?><?=menuClassActive($nowpage, "memberModify")?>>
        		<a href="javascript:;" onclick="pageGo('admin_index','view/admin/member','memberList','','','1');"><i class="fa fa-fw fa-users"></i> 회원</a>
    		</li>
-		<li>
-       		<a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> 접속통계</a>
+		<li <?=menuClassActive($nowpage, "memberRegisterStats")?><?=menuClassActive($nowpage, "monthdayAccessStats")?><?=menuClassActive($nowpage, "dayweekAccessStats")?><?=menuClassActive($nowpage, "timeAccessStats")?><?=menuClassActive($nowpage, "searchSiteAccessStats")?><?=menuClassActive($nowpage, "keywordSearchStats")?>>
+       		<a href="javascript:;" onclick="pageGo('admin_index','view/admin/accessStats','memberRegisterStats','','','1');"><i class="fa fa-fw fa-bar-chart-o"></i> 통계</a>
    		</li>
     	<li>
       		<a href="forms.html"><i class="fa fa-fw fa-edit"></i> 제휴상담</a>

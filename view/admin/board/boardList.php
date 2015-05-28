@@ -85,7 +85,7 @@ sql_query($sql2);
                    			<tr><td colspan="4" style="text-align:center"><?=$paging_str?></td></tr>
                    			<tr>
                    				<td colspan="4" style="text-align:center">
-                   					<button type="button" class="btn btn-primary btn-block" onclick="pageGo('admin_index', 'view/admin/board', 'boardInsert', '', '', '');">게시판생성</button>
+                   					<button type="button" class="btn btn-primary btn-block" onclick="pageGo('admin_index', 'view/admin/board', 'boardInsert', '', '', '<?=$page?>');">게시판생성</button>
                    				</td>
                    			</tr>
                     	</tbody>

@@ -1,3 +1,6 @@
+<?php 
+$page = isset($_REQUEST['page'])?$_REQUEST['page']:1;
+?>
 <div id="page-wrapper">
 
  	<div class="container-fluid">
@@ -79,7 +82,7 @@
 								<button class="btn btn-lg btn-primary btn-block" type="submit">회원등록</button>
 							</td>
 							<td>
-								<button class="btn btn-lg btn-info btn-block" type="button" onclick="pageGo('admin_index','view/admin/member','memberList','','','1');">뒤로가기</button>
+								<button class="btn btn-lg btn-info btn-block" type="button" onclick="pageGo('admin_index','view/admin/member','memberList','','','<?=$page?>');">뒤로가기</button>
 							</td>
 						</tr>
 					</table>
