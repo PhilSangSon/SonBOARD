@@ -24,6 +24,8 @@ if($u_level < $board_config['bc_list_level']){
 	ArticleAlert("권한이 없습니다.", "view/admin/board", "articleList", $articlePage);
 }
 ?>
+<script type="text/javascript" src="/SE2.3.10.O11329/js/HuskyEZCreator.js" charset="utf-8"></script>
+
 <div id="page-wrapper">
 
  	<div class="container-fluid">
@@ -49,7 +51,7 @@ if($u_level < $board_config['bc_list_level']){
         <div class="row">
        		<div class="col-lg-12">
          		<h2><?=$board_config['bc_name']?> 입력</h2>
-         		<form class="form-signin" name='MyForm' id='MyForm' method='post' enctype="multipart/form-data" onsubmit='return article_insertCheck();'>
+         		<form class="form-signin" name='MyForm' id='MyForm' method='post' onsubmit='return false;'>
               	<input type='hidden' name='section' id='section' value='core/model'/>
 		    	<input type='hidden' name='nowpage' id='nowpage' value='boardController'/>
 		    	<input type='hidden' name='mode' id='mode' value='articleInsert'/>
@@ -132,14 +134,14 @@ if($u_level < $board_config['bc_list_level']){
                			?>
                				<tr>
                   				<td><label for="b_contents">글내용</label></td>
-                  				<td><textarea name="b_contents" style="width:800px;height:200px;"></textarea></td>
+                  				<td><textarea name="b_contents" id="b_contents" rows="10" cols="100" style="width:100%;height:412px;display:none"></textarea></td>
                 			</tr>
                				<tr>
                					<td colspan="2">
                						<table style="width:100%">
                							<tr>
 											<td style="width:50%;padding:10px">
-												<button class="btn btn-lg btn-primary btn-block" type="submit">글쓰기</button>
+												<button class="btn btn-lg btn-primary btn-block" type="button" onclick="submitContents(this);">글쓰기</button>
 											</td>
 											<td style="width:50%;padding:10px">
 												<button class="btn btn-lg btn-info btn-block" type="button" onclick="pageArticleGo('admin_index','view/admin/board','articleList','','<?=$bc_code?>','<?=$articlePage?>');">뒤로가기</button>
@@ -182,3 +184,65 @@ if($u_level < $board_config['bc_list_level']){
 	</div>
      	
 </div>
+<script type="text/javascript">
+var oEditors = [];
+
+// 추가 글꼴 목록
+//var aAdditionalFontSet = [["MS UI Gothic", "MS UI Gothic"], ["Comic Sans MS", "Comic Sans MS"],["TEST","TEST"]];
+
+nhn.husky.EZCreator.createInIFrame({
+	oAppRef: oEditors,
+	elPlaceHolder: "b_contents",
+	sSkinURI: "/SE2.3.10.O11329/SmartEditor2Skin.html",	
+	htParams : {
+		bUseToolbar : true,				// 툴바 사용 여부 (true:사용/ false:사용하지 않음)
+		bUseVerticalResizer : true,		// 입력창 크기 조절바 사용 여부 (true:사용/ false:사용하지 않음)
+		bUseModeChanger : true,			// 모드 탭(Editor | HTML | TEXT) 사용 여부 (true:사용/ false:사용하지 않음)
+		//aAdditionalFontList : aAdditionalFontSet,		// 추가 글꼴 목록
+		fOnBeforeUnload : function(){
+			//alert("완료!");
+		}
+	}, //boolean
+	fOnAppLoad : function(){
+		//예제 코드
+		//oEditors.getById["ir1"].exec("PASTE_HTML", ["로딩이 완료된 후에 본문에 삽입되는 text입니다."]);
+	},
+	fCreator: "createSEditor2"
+});
+
+	
+function submitContents(elClickedObj) {
+	var WriteForm = document.MyForm;
+	oEditors.getById["b_contents"].exec("UPDATE_CONTENTS_FIELD", []);	// 에디터의 내용이 textarea에 적용됩니다.
+	
+	// 에디터의 내용에 대한 값 검증은 이곳에서 document.getElementById("ir1").value를 이용해서 처리하면 됩니다.
+	if($.trim($("#b_title").val()).length <= 0){
+		alert("제목을 입력해주세요.");	
+		$("#b_title").val("");
+		$('#b_title').css("border","1px solid red");
+		$("#b_title").focus();
+		return false;
+	}else{
+		$('#b_title').css("border","1px solid green");
+	}
+	if($.trim($("#b_contents").val()).length <= 0){
+		alert("내용을 입력해주세요.");	
+		$("#b_contents").val("");
+		$('#b_contents').css("border","1px solid red");
+		$("#b_contents").focus();
+		return false;
+	}else{
+		$('#b_contents').css("border","1px solid green");
+	}
+	
+	try {
+		elClickedObj.form.submit();
+	} catch(e) {}
+}
+
+function setDefaultFont() {
+	var sDefaultFont = '궁서';
+	var nFontSize = 24;
+	oEditors.getById["b_contents"].setDefaultFont(sDefaultFont, nFontSize);
+}
+</script>
