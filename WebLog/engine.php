@@ -7,7 +7,7 @@
  */
 //검색사이트의 명칭
 $ENSET = array(
-		"기타사이트,,,",
+		"기타사이트,,",
 		"구글(한글),google.co.kr,q",
 		"구글(영문),google.com,q",
 		"빙,bing.search.daum.net,q",

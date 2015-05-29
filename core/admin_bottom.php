@@ -22,6 +22,13 @@
     	<input type='hidden' name='nday' id='nday'/>
     </form>
     
+    <form name='PageArticleForm' id='PageArticleForm' method='post' onsubmit='return false;'>
+    	<input type='hidden' name='section' id='section'/>
+    	<input type='hidden' name='nowpage' id='nowpage'/>
+    	<input type='hidden' name='mode' id='mode'/>
+    	<input type='hidden' name='idx' id='idx'/>
+    	<input type='hidden' name='articlePage' id='articlePage'/>
+    </form>
     <!-- jQuery -->
     <script src="<?=$_cfg['skin_path']?>js/jquery.js"></script>
 

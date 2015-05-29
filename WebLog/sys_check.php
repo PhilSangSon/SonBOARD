@@ -27,12 +27,12 @@ function getOsName()
 function getOsVersion($agent)
 {
 	$agent_exp = explode('Windows ', $agent);
-	if (strstr($agent_exp[1] , 'NT 5.1')) return 1;
-	if (strstr($agent_exp[1] , 'NT 5.0')) return 2;
-	if (strstr($agent_exp[1] , 'ME'    )) return 3;
-	if (strstr($agent_exp[1] , 'NT 4'  )) return 4;
-	if (strstr($agent_exp[1] , '98'    )) return 5;
-	if (strstr($agent_exp[1] , '95'    )) return 5;
+	if (@strstr($agent_exp[1] , 'NT 5.1')) return 1;
+	if (@strstr($agent_exp[1] , 'NT 5.0')) return 2;
+	if (@strstr($agent_exp[1] , 'ME'    )) return 3;
+	if (@strstr($agent_exp[1] , 'NT 4'  )) return 4;
+	if (@strstr($agent_exp[1] , '98'    )) return 5;
+	if (@strstr($agent_exp[1] , '95'    )) return 5;
 	return 5;
 }
 function getBrowserName()

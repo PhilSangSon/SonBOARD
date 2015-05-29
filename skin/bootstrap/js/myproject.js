@@ -521,3 +521,13 @@ function pageDateGo(action, section, nowpage, mode, idx, page, nyear, nmonth, nd
 	form.action=action+ext;
 	form.submit();
 }
+function pageArticleGo(action, section, nowpage, mode, idx, page){
+	var form = document.PageArticleForm;
+	form.section.value=section;
+	form.nowpage.value=nowpage;
+	form.mode.value=mode;
+	form.idx.value=idx;
+	form.articlePage.value=page;
+	form.action=action+ext;
+	form.submit();
+}
