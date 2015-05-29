@@ -24,6 +24,9 @@
 			<div class="btn-group" role="group">
 		    	<button type="button" onclick="pageGo('admin_index','view/admin/accessStats','keywordSearchStats','','','1');" class="btn btn-default <?if($nowpage=="keywordSearchStats"){echo "active";}?>">키워드검색 접속</button>
 		  	</div>
+		  	<div class="btn-group" role="group">
+		    	<button type="button" onclick="pageGo('admin_index','view/admin/accessStats','accessLogSearchStats','','','1');" class="btn btn-default <?if($nowpage=="accessLogSearchStats"){echo "active";}?>">접속로그 데이터</button>
+		  	</div>
 		</div>
 	</div>
 </div>

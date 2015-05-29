@@ -11,6 +11,17 @@
     	<input type='hidden' name='page' id='page'/>
     </form>
     
+    <form name='PageDateForm' id='PageDateForm' method='post' onsubmit='return false;'>
+    	<input type='hidden' name='section' id='section'/>
+    	<input type='hidden' name='nowpage' id='nowpage'/>
+    	<input type='hidden' name='mode' id='mode'/>
+    	<input type='hidden' name='idx' id='idx'/>
+    	<input type='hidden' name='page' id='page'/>
+    	<input type='hidden' name='nyear' id='nyear'/>
+    	<input type='hidden' name='nmonth' id='nmonth'/>
+    	<input type='hidden' name='nday' id='nday'/>
+    </form>
+    
     <!-- jQuery -->
     <script src="<?=$_cfg['skin_path']?>js/jquery.js"></script>
 

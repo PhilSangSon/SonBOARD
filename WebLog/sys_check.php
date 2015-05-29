@@ -140,10 +140,10 @@ extract($_GET);
 extract($_POST);
 extract($_SERVER);
 $_SESSION['MykimsLogIp']=isset($_SESSION['MykimsLogIp'])?$_SESSION['MykimsLogIp']:$_SERVER["REMOTE_ADDR"];
-
-if($_SESSION['MykimsLogIp'] == $_SERVER["REMOTE_ADDR"]){
+$HTTP_REFERER = isset($_SERVER["HTTP_REFERER"])?$_SERVER["HTTP_REFERER"]:"";
+//if($_SESSION['MykimsLogIp'] == $_SERVER["REMOTE_ADDR"]){
 	// 아이피 동일
-}else{
+//}else{
 	include $_SERVER['DOCUMENT_ROOT'].'/WebLog/engine.php';
 	
 	$OsSet1    = array("Windows","Linux","Mac","Irix","Sunos","Phone");
@@ -180,5 +180,5 @@ if($_SESSION['MykimsLogIp'] == $_SERVER["REMOTE_ADDR"]){
 	$_SESSION['MykimsLogIp']=$MykimsLogIp;
 	$_SESSION['RFENGINE']   =$RFENGINE;
 	$_SESSION['RFKEYWORD']  =$RFKEYWORD;
-}
+//}
 ?>

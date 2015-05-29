@@ -508,3 +508,16 @@ function pageGo(action, section, nowpage, mode, idx, page){
 	form.action=action+ext;
 	form.submit();
 }
+function pageDateGo(action, section, nowpage, mode, idx, page, nyear, nmonth, nday){
+	var form = document.PageDateForm;
+	form.section.value=section;
+	form.nowpage.value=nowpage;
+	form.mode.value=mode;
+	form.idx.value=idx;
+	form.page.value=page;
+	form.nyear.value=nyear;
+	form.nmonth.value=nmonth;
+	form.nday.value=nday;
+	form.action=action+ext;
+	form.submit();
+}
