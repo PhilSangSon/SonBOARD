@@ -135,7 +135,7 @@ function PageAlert($msg = '', $section = '', $nowpage = '', $page = '1'){
  * @param string $nowpage
  * @param string $page
  */
-function ArticleAlert($msg = '', $section = '', $nowpage = '', $page = '1'){
+function ArticleAlert($msg = '', $section = '', $nowpage = '', $page = '1', $idx = ''){
 	if ($msg != ''){
 		//$msg = '올바른 방법으로 이용해 주십시오.';
 		echo "<script type='text/javascript'>alert('$msg');";
@@ -147,6 +147,7 @@ function ArticleAlert($msg = '', $section = '', $nowpage = '', $page = '1'){
 		<input type='hidden' name='section' id='section' value='$section'/>
 		<input type='hidden' name='nowpage' id='nowpage' value='$nowpage'/>
 		<input type='hidden' name='articlePage' id='articlePage' value='$page'/>
+		<input type='hidden' name='idx' id='idx' value='$idx'/>
 		</form>
 		<script type='text/javascript'>
 		document.PageForm.submit();

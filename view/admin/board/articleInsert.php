@@ -51,11 +51,12 @@ if($u_level < $board_config['bc_list_level']){
         <div class="row">
        		<div class="col-lg-12">
          		<h2><?=$board_config['bc_name']?> 입력</h2>
-         		<form class="form-signin" name='MyForm' id='MyForm' method='post' onsubmit='return false;'>
+         		<form class="form-signin" name='MyForm' id='MyForm' enctype="multipart/form-data" method='post' onsubmit='return false;'>
               	<input type='hidden' name='section' id='section' value='core/model'/>
 		    	<input type='hidden' name='nowpage' id='nowpage' value='boardController'/>
 		    	<input type='hidden' name='mode' id='mode' value='articleInsert'/>
 		    	<input type='hidden' name='bc_code' id='bc_code' value='<?=$bc_code?>'/>
+		    	<input type='hidden' name='articlePage' id='articlePage' value='<?=$articlePage?>'/>
               	<div class="table-responsive">
                		<table class="table table-bordered table-hover">
                			<thead>
@@ -92,7 +93,7 @@ if($u_level < $board_config['bc_list_level']){
                			?>
                				<tr>
                					<td><label for="m_name">작성자명</label></td>
-               					<td><input type="text" id="m_name" name="m_name" style="ime-mode:active" class="form-control" placeholder="작성자명" maxlength="30" required autofocus></td>
+               					<td><input type="text" id="m_name" name="m_name" style="ime-mode:active" class="form-control" placeholder="작성자명" maxlength="30" required></td>
                				</tr>
                			<?
                			}else{
@@ -134,7 +135,7 @@ if($u_level < $board_config['bc_list_level']){
                			?>
                				<tr>
                   				<td><label for="b_contents">글내용</label></td>
-                  				<td><textarea name="b_contents" id="b_contents" rows="10" cols="100" style="width:100%;height:412px;display:none"></textarea></td>
+                  				<td><textarea name="b_contents" id="b_contents" rows="10" cols="100" style="width:100%;height:412px;display:none;"></textarea></td>
                 			</tr>
                				<tr>
                					<td colspan="2">
@@ -205,7 +206,8 @@ nhn.husky.EZCreator.createInIFrame({
 	}, //boolean
 	fOnAppLoad : function(){
 		//예제 코드
-		//oEditors.getById["ir1"].exec("PASTE_HTML", ["로딩이 완료된 후에 본문에 삽입되는 text입니다."]);
+		oEditors.getById["b_contents"].exec("PASTE_HTML", [""]);
+		//oEditors.getById["b_contents"].exec("SET_CONTENTS", [""]);
 	},
 	fCreator: "createSEditor2"
 });
@@ -214,7 +216,7 @@ nhn.husky.EZCreator.createInIFrame({
 function submitContents(elClickedObj) {
 	var WriteForm = document.MyForm;
 	oEditors.getById["b_contents"].exec("UPDATE_CONTENTS_FIELD", []);	// 에디터의 내용이 textarea에 적용됩니다.
-	
+	//alert(document.getElementById("b_contents").value);
 	// 에디터의 내용에 대한 값 검증은 이곳에서 document.getElementById("ir1").value를 이용해서 처리하면 됩니다.
 	if($.trim($("#b_title").val()).length <= 0){
 		alert("제목을 입력해주세요.");	
@@ -224,6 +226,10 @@ function submitContents(elClickedObj) {
 		return false;
 	}else{
 		$('#b_title').css("border","1px solid green");
+		if($("#b_contents").val()=="<p>&nbsp;</p>"){
+			$("#b_contents").val("");
+			$("#b_contents").focus();
+		}
 	}
 	if($.trim($("#b_contents").val()).length <= 0){
 		alert("내용을 입력해주세요.");	
@@ -234,7 +240,7 @@ function submitContents(elClickedObj) {
 	}else{
 		$('#b_contents').css("border","1px solid green");
 	}
-	
+	WriteForm.submit();
 	try {
 		elClickedObj.form.submit();
 	} catch(e) {}

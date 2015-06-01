@@ -531,3 +531,14 @@ function pageArticleGo(action, section, nowpage, mode, idx, page){
 	form.action=action+ext;
 	form.submit();
 }
+function pageArticleViewGo(action, section, nowpage, mode, idx, page, b_idx){
+	var form = document.PageArticleForm;
+	form.section.value=section;
+	form.nowpage.value=nowpage;
+	form.mode.value=mode;
+	form.idx.value=idx;
+	form.b_idx.value=b_idx;
+	form.articlePage.value=page;
+	form.action=action+ext;
+	form.submit();
+}

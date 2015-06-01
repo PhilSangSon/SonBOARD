@@ -27,6 +27,7 @@
     	<input type='hidden' name='nowpage' id='nowpage'/>
     	<input type='hidden' name='mode' id='mode'/>
     	<input type='hidden' name='idx' id='idx'/>
+    	<input type='hidden' name='b_idx' id='b_idx'/>
     	<input type='hidden' name='articlePage' id='articlePage'/>
     </form>
     <!-- jQuery -->

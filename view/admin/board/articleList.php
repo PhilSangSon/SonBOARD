@@ -110,7 +110,7 @@ $result = mysqli_query($connect, $query);
                   	
                   		// 댓글 앞에 붙을 기호 만들기
                   		$reply_str = "";
-                  		$reply_depth = strlen($data[b_reply]);
+                  		$reply_depth = strlen($data['b_reply']);
                   		if ($reply_depth > 0){
                   			for ($k=0; $k<$reply_depth; $k++){
                   				$reply_str .= '&nbsp;&nbsp;&nbsp;';
@@ -120,27 +120,32 @@ $result = mysqli_query($connect, $query);
                   	
                   		// 게시글 링크 및 비밀글표시 만들기
                   		$mark_secret = "";
-                  		if($data[b_is_secret]){
+                  		if($data['b_is_secret']){
                   			$mark_secret = "[비밀글] ";
                   		}
                   		// 게시글을 볼 권한 여부에 따라서
-                  		if($u_level >= $board_config[bc_read_level]){
+                  		if($u_level >= $board_config['bc_read_level']){
                   			// 비밀글 여부 따지기
-                  			if($data[b_is_secret]){
+                  			if($data['b_is_secret']){
                   				// 글쓴이와 관리자 여부 따지기
-                  				if($_SESSION[user_id] == $data[m_id] || $_SESSION[user_id] == 9 || ($_SESSION[user_id] == $board_config[bc_admin] && $board_config[bc_admin])){
-                  					$article_link = "./board_view.php?bc_code=".$bc_code."&b_idx=".$data[b_idx]."&page=".$page;
+                  				if($_SESSION['user_id'] == $data['m_id'] || $_SESSION['user_id'] == 9 || ($_SESSION['user_id'] == $board_config['bc_admin'] && $board_config['bc_admin'])){
+                  					$article_link = "javascript:pageArticleViewGo('admin_index', 'view/admin/board', 'articleView', '', '".$bc_code."', '".$articlePage."', '".$data['b_idx']."');";
                   				}else{
-                  					$article_link = "./board_password.php?bc_code=".$bc_code."&b_idx=".$data[b_idx]."&page=".$page;
+                  					$article_link = "javascript:pageArticleViewGo('admin_index', 'view/admin/board', 'articlePassword', '', '".$bc_code."', '".$articlePage."', '".$data['b_idx']."');";
                   				}
                   			}else{
-                  				$article_link = "./board_view.php?bc_code=".$bc_code."&b_idx=".$data[b_idx]."&page=".$page;
+                  				$article_link = "javascript:pageArticleViewGo('admin_index', 'view/admin/board', 'articleView', '', '".$bc_code."', '".$articlePage."', '".$data['b_idx']."');";
                   			}
                   		}else{
                   			$article_link = "javascript:alert('글을 읽을 권한이 없습니다.');";
                   		}
                   	?>
-                  	
+                  			<tr>
+                       			<td><?=($total_count - (($page -1) * $page_row) - $i)?></td>
+                         		<td><?=$reply_str?><a href="<?=$article_link?>"><?=$mark_secret?><?=$data['b_title']?></a></td>
+                         		<td><?=$data['m_name']?></td>
+                           		<td><?=substr($data['b_regdate'], 0, 10)?></td>
+                    		</tr>
                   	<?php 
                   	$i++;
                   	}
